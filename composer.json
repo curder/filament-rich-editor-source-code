@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "curder/filament-rich-editor-source-code",
+    "description": "Allow Filament 4.x View and edit the source code of the rich text editor in the form of a modal.",
     "keywords": [
-        ":vendor_name",
+        "curder",
         "laravel",
-        ":package_slug"
+        "filament-rich-editor-source-code"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/curder/filament-rich-editor-source-code",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "curder",
+            "email": "q.curder@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Curder\\FilamentRichEditorSourceCode\\": "src/",
+            "Curder\\FilamentRichEditorSourceCode\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Curder\\FilamentRichEditorSourceCode\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Curder\\FilamentRichEditorSourceCode\\FilamentRichEditorSourceCodeServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentRichEditorSourceCode": "Curder\\FilamentRichEditorSourceCode\\Facades\\FilamentRichEditorSourceCode"
             }
         }
     },
