@@ -45,12 +45,13 @@ const defaultOptions = {
 
 const extensions = [
     'source-code',
+    'custom',
 ]
 
 extensions.forEach((extension) => {
     compile({
         ...defaultOptions,
-        entryPoints: [`./resources/js/${extension}.js`],
+        entryPoints: [`./resources/js/${extension}.js`,],
         outfile: `./resources/dist/${extension}.js`,
     }).then(() => {
         console.log(`Build completed for ${extension}.js`)

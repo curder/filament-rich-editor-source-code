@@ -1,6 +1,6 @@
 <?php
 
-namespace Curder\FilamentRichEditorSourceCode;
+namespace Curder\FilamentRichEditorSourceCode\Plugins;
 
 use Filament\Forms\Components\RichEditor\Plugins\Contracts\RichContentPlugin;
 use Filament\Forms\Components\RichEditor\RichEditorTool;
