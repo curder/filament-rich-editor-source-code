@@ -2,15 +2,16 @@
 
 namespace Curder\FilamentRichEditorSourceCode\Facades;
 
+use Curder\FilamentRichEditorSourceCode\RichEditorSourceCodePlugin;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Curder\FilamentRichEditorSourceCode\FilamentRichEditorSourceCode
+ * @see RichEditorSourceCodePlugin
  */
 class FilamentRichEditorSourceCode extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Curder\FilamentRichEditorSourceCode\FilamentRichEditorSourceCode::class;
+        return RichEditorSourceCodePlugin::class;
     }
 }

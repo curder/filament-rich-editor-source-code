@@ -43,9 +43,16 @@ const defaultOptions = {
     }],
 }
 
-// Build main plugin file
-compile({
-    ...defaultOptions,
-    entryPoints: ['./resources/js/index.js'],
-    outfile: './resources/dist/rich-content-plugins/source-ai.js',
+const extensions = [
+    'source-code',
+]
+
+extensions.forEach((extension) => {
+    compile({
+        ...defaultOptions,
+        entryPoints: [`./resources/js/${extension}.js`],
+        outfile: `./resources/dist/${extension}.js`,
+    }).then(() => {
+        console.log(`Build completed for ${extension}.js`)
+    })
 })
