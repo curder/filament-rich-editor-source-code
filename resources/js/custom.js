@@ -13,6 +13,13 @@ export default Node.create({
 
     addAttributes() {
         return {
+            id: {
+                default: null,
+                parseHTML: element => element.getAttribute('id'),
+                renderHTML: attributes => {
+                    return attributes.id ? { id: attributes.id } : {};
+                },
+            },
             class: {
                 default: null,
                 parseHTML: element => element.getAttribute('class'),
@@ -27,8 +34,9 @@ export default Node.create({
         return [{
             tag: 'div',
             getAttrs: element => {
+                const id = element.getAttribute('id') || '';
                 const className = element.getAttribute('class') || '';
-                return {class: className};
+                return {id, class: className};
             },
         }];
     },
