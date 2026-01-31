@@ -1,4 +1,4 @@
-# Allow Filament 4.x View and edit the source code of the rich text editor in the form of a modal.
+# Allow Filament 4.x Or 5.x View and edit the source code of the rich text editor in the form of a modal.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/curder/filament-rich-editor-source-code.svg?style=flat-square)](https://packagist.org/packages/curder/filament-rich-editor-source-code)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/curder/filament-rich-editor-source-code/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/curder/filament-rich-editor-source-code/actions?query=workflow%3Arun-tests+branch%3Amain)
