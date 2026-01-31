@@ -19,7 +19,6 @@ class FilamentRichEditorSourceCodeServiceProvider extends PackageServiceProvider
             ->name('filament-rich-editor-source-code')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_filament_rich_editor_source_code_table')
             ->hasCommand(FilamentRichEditorSourceCodeCommand::class);
     }
 }
