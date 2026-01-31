@@ -4,9 +4,7 @@ namespace Curder\FilamentRichEditorSourceCode\Plugins;
 
 use Curder\FilamentRichEditorSourceCode\Nodes\EnableDiv;
 use Filament\Forms\Components\RichEditor\Plugins\Contracts\RichContentPlugin;
-use Filament\Forms\Components\RichEditor\RichEditorTool;
 use Filament\Support\Facades\FilamentAsset;
-use Filament\Support\Icons\Heroicon;
 
 class CustomRichContentPlugin implements RichContentPlugin
 {
@@ -16,7 +14,7 @@ class CustomRichContentPlugin implements RichContentPlugin
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function getTipTapPhpExtensions(): array
     {
@@ -26,7 +24,7 @@ class CustomRichContentPlugin implements RichContentPlugin
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function getTipTapJsExtensions(): array
     {
@@ -36,7 +34,7 @@ class CustomRichContentPlugin implements RichContentPlugin
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function getEditorTools(): array
     {
@@ -46,7 +44,7 @@ class CustomRichContentPlugin implements RichContentPlugin
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public function getEditorActions(): array
     {

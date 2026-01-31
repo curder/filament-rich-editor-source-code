@@ -30,13 +30,13 @@ class EnableDiv extends Node
         return [
             'id' => [
                 'default' => null,
-                'parseHTML' => fn($DOMNode) => $DOMNode->getAttribute('id') ?: null,
-                'renderHTML' => fn($attributes) => isset($attributes->id) ? ['id' => $attributes->id] : [],
+                'parseHTML' => fn ($DOMNode) => $DOMNode->getAttribute('id') ?: null,
+                'renderHTML' => fn ($attributes) => isset($attributes->id) ? ['id' => $attributes->id] : [],
             ],
             'class' => [
                 'default' => null,
-                'parseHTML' => fn($DOMNode) => $DOMNode->getAttribute('class') ?: null,
-                'renderHTML' => fn($attributes) => isset($attributes->class) ? ['class' => $attributes->class] : [],
+                'parseHTML' => fn ($DOMNode) => $DOMNode->getAttribute('class') ?: null,
+                'renderHTML' => fn ($attributes) => isset($attributes->class) ? ['class' => $attributes->class] : [],
             ],
         ];
     }
