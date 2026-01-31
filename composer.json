@@ -35,14 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Curder\\FilamentRichEditorSourceCode\\": "src/",
-            "Curder\\FilamentRichEditorSourceCode\\Database\\Factories\\": "database/factories/"
+            "Curder\\FilamentRichEditorSourceCode\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Curder\\FilamentRichEditorSourceCode\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "Curder\\FilamentRichEditorSourceCode\\Tests\\": "tests/"
         }
     },
     "scripts": {
