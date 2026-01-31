@@ -2,13 +2,13 @@
 
 namespace Curder\FilamentRichEditorSourceCode;
 
+use Filament\Support\Assets\Js;
+use Spatie\LaravelPackageTools\Package;
+use Filament\Forms\Components\RichEditor;
+use Filament\Support\Facades\FilamentAsset;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Curder\FilamentRichEditorSourceCode\Plugins\CustomRichContentPlugin;
 use Curder\FilamentRichEditorSourceCode\Plugins\RichEditorSourceCodePlugin;
-use Filament\Forms\Components\RichEditor;
-use Filament\Support\Assets\Js;
-use Filament\Support\Facades\FilamentAsset;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FilamentRichEditorSourceCodeServiceProvider extends PackageServiceProvider
 {

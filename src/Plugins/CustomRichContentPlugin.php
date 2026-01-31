@@ -2,9 +2,9 @@
 
 namespace Curder\FilamentRichEditorSourceCode\Plugins;
 
+use Filament\Support\Facades\FilamentAsset;
 use Curder\FilamentRichEditorSourceCode\Nodes\EnableDiv;
 use Filament\Forms\Components\RichEditor\Plugins\Contracts\RichContentPlugin;
-use Filament\Support\Facades\FilamentAsset;
 
 class CustomRichContentPlugin implements RichContentPlugin
 {

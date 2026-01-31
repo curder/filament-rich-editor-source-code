@@ -2,9 +2,9 @@
 
 namespace Curder\FilamentRichEditorSourceCode\Tests;
 
-use Curder\FilamentRichEditorSourceCode\FilamentRichEditorSourceCodeServiceProvider;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Curder\FilamentRichEditorSourceCode\FilamentRichEditorSourceCodeServiceProvider;
 
 class TestCase extends Orchestra
 {

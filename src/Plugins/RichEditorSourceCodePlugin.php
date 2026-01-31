@@ -2,10 +2,10 @@
 
 namespace Curder\FilamentRichEditorSourceCode\Plugins;
 
-use Filament\Forms\Components\RichEditor\Plugins\Contracts\RichContentPlugin;
-use Filament\Forms\Components\RichEditor\RichEditorTool;
-use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Icons\Heroicon;
+use Filament\Support\Facades\FilamentAsset;
+use Filament\Forms\Components\RichEditor\RichEditorTool;
+use Filament\Forms\Components\RichEditor\Plugins\Contracts\RichContentPlugin;
 
 class RichEditorSourceCodePlugin implements RichContentPlugin
 {
