@@ -11,11 +11,25 @@ Allow Filament 4.x Or 5.x View and edit the source code of the rich text editor 
 
 You can install the package via composer:
 
-```bash
+```shell
 composer require curder/filament-rich-editor-source-code
 ```
 
+You need to publish the package assets using the following command:
+
+```shell
+php artisan filament:assets
+```
+
+You can publish the language files using the following command:
+
+```shell
+php artisan vendor:publish --tag=filament-rich-editor-source-code-translations
+```
+
 ## Usage
+
+To enable the source code button in the Filament Rich Editor, you need to customize the toolbar buttons by adding the `source-code` button to the array of toolbar buttons.
 
 ```php
 RichEditor::make('html')
@@ -31,8 +45,51 @@ RichEditor::make('html')
 
 ## Testing
 
-```bash
+```shell
 composer test
+```
+
+## Development
+
+You can set up the development environment by running the following commands:
+
+Add the following script to your `composer.json` to require the development dependencies:
+
+```json
+{
+    "require": {
+        "php": "^8.2",
+        "curder/filament-rich-editor-source-code": "@dev",
+        "filament/filament": "^5.0",
+        "laravel/framework": "^12.0",
+        "laravel/tinker": "^2.10.1"
+    },
+    "repositories": [
+        {"type": "path", "url": "/Users/curder/Codes/GitHub/curder/filament-rich-editor-source-code"}
+    ]
+}
+```
+
+Then run:
+
+```shell
+composer update curder/filament-rich-editor-source-code
+```
+
+If you change js file, should run the following commands to install dependencies and build assets:
+
+```shell
+# Install the dependencies
+pnpm i 
+
+# Build the assets initially
+node ./bin/build.js
+```
+
+And run the following command to your project directory update the assets after changing js files:
+
+```shell
+php artisan filament:assets
 ```
 
 ## Changelog
