@@ -1,7 +1,7 @@
 <?php
 
 it('ships a source-code TipTap extension that exposes active state via editor.isActive()', function () {
-    $bundlePath = __DIR__ . '/../resources/dist/source-code.js';
+    $bundlePath = __DIR__.'/../resources/dist/source-code.js';
 
     expect(file_exists($bundlePath))->toBeTrue();
 
@@ -17,7 +17,7 @@ it('ships a source-code TipTap extension that exposes active state via editor.is
 });
 
 it('disables and restores other toolbar buttons while in source mode (bundle contract)', function () {
-    $bundlePath = __DIR__ . '/../resources/dist/source-code.js';
+    $bundlePath = __DIR__.'/../resources/dist/source-code.js';
 
     expect(file_exists($bundlePath))->toBeTrue();
 
