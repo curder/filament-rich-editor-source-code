@@ -7,14 +7,6 @@
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-rich-editor-source-code.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-rich-editor-source-code)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:
@@ -23,37 +15,18 @@ You can install the package via composer:
 composer require curder/filament-rich-editor-source-code
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-rich-editor-source-code-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-rich-editor-source-code-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-rich-editor-source-code-views"
-```
-
 ## Usage
 
 ```php
-$filamentRichEditorSourceCode = new Curder\FilamentRichEditorSourceCode();
-echo $filamentRichEditorSourceCode->echoPhrase('Hello, Curder!');
+RichEditor::make('html')
+    ->toolbarButtons([
+        ['source-code'], // Add the `source-code` button to the toolbar.
+        [ 'bold', 'italic', 'underline', 'strike', 'subscript', 'superscript', 'link'],
+        ['h2', 'h3', 'alignStart', 'alignCenter', 'alignEnd'],
+        ['blockquote', 'codeBlock', 'bulletList', 'orderedList'],
+        ['table', 'attachFiles', 'customBlocks'], // The `customBlocks` and `mergeTags` tools are also added here if those features are used.
+        ['undo', 'redo'],
+    ]),
 ```
 
 ## Testing
@@ -68,17 +41,19 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+PRs are welcome.
 
-## Security Vulnerabilities
+- Keep changes focused.
+- Include tests if behavior changes.
 
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+## Security
+
+If you discover a security issue, please report it privately by emailing the maintainer.
 
 ## Credits
 
 - [curder](https://github.com/Curder)
-- [All Contributors](../../contributors)
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+MIT. See [LICENSE](LICENSE.md).
