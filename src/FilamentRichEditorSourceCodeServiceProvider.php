@@ -18,7 +18,6 @@ class FilamentRichEditorSourceCodeServiceProvider extends PackageServiceProvider
         $package
             ->name('filament-rich-editor-source-code')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasCommand(FilamentRichEditorSourceCodeCommand::class);
+            ->hasViews();
     }
 }
