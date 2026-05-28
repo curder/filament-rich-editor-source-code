@@ -1,7 +1,7 @@
 <?php
 
-use Curder\FilamentRichEditorSourceCode\Plugins\CustomRichContentPlugin;
 use Curder\FilamentRichEditorSourceCode\Nodes\EnableDiv;
+use Curder\FilamentRichEditorSourceCode\Plugins\CustomRichContentPlugin;
 
 it('can be instantiated via make()', function () {
     $plugin = CustomRichContentPlugin::make();
