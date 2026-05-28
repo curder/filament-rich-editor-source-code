@@ -161,7 +161,16 @@ export default Extension.create({
                     const textarea = document.createElement('textarea')
                     textarea.value = formattedHtml
                     textarea.className = 'source-view-textarea'
-                    textarea.style.cssText = 'width: 100%; height: 100%; min-height: 310px; font-family: monospace; font-size: 13px; padding: 10px; border: none; outline: none; resize: vertical; background: transparent; color: inherit;'
+
+                    // Match ProseMirror's padding so content alignment stays consistent
+                    const proseMirrorEl = editorWrapper.querySelector('.tiptap.ProseMirror')
+                    let padding = '10px'
+                    if (proseMirrorEl) {
+                        const computedStyle = window.getComputedStyle(proseMirrorEl)
+                        padding = computedStyle.padding || padding
+                    }
+
+                    textarea.style.cssText = `width: 100%; height: 100%; min-height: 310px; font-family: monospace; font-size: 13px; margin-top: 0; padding: ${padding}; border: none; outline: none; resize: vertical; background: transparent; color: inherit;`
 
                     textarea.addEventListener('input', (e) => {
                         state.sourceContent = e.target.value
